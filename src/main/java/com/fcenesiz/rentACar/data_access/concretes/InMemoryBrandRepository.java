@@ -2,10 +2,12 @@ package com.fcenesiz.rentACar.data_access.concretes;
 
 import com.fcenesiz.rentACar.data_access.abstracts.BrandRepository;
 import com.fcenesiz.rentACar.entities.concretes.Brand;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class InMemoryBrandRepository implements BrandRepository {
 
     List<Brand> brands;
