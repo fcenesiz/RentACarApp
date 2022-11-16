@@ -1,9 +1,10 @@
 package com.fcenesiz.rentACar.api.controllers;
 
 import com.fcenesiz.rentACar.business.abstracts.BrandService;
-import com.fcenesiz.rentACar.entities.concretes.Brand;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.fcenesiz.rentACar.business.requests.CreateBrandRequest;
+import com.fcenesiz.rentACar.business.responses.GetAllBrandsResponse;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,8 +21,13 @@ public class BrandsController {
     }
 
     @GetMapping("/all")
-    public List<Brand> getAll(){
+    public List<GetAllBrandsResponse> getAll(){
         return brandService.getAll();
+    }
+
+    @PostMapping("/add")
+    public void add(CreateBrandRequest createBrandRequest){
+        this.brandService.add(createBrandRequest);
     }
 
 }
