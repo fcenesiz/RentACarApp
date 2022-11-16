@@ -1,4 +1,4 @@
-package com.fcenesiz.rentACar.entity.concretes;
+package com.fcenesiz.rentACar.entities.concretes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,7 +10,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

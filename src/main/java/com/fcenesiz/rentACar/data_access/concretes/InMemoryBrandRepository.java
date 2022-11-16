@@ -1,7 +1,7 @@
 package com.fcenesiz.rentACar.data_access.concretes;
 
 import com.fcenesiz.rentACar.data_access.abstracts.BrandRepository;
-import com.fcenesiz.rentACar.entity.concretes.Brand;
+import com.fcenesiz.rentACar.entities.concretes.Brand;
 
 import java.util.ArrayList;
 import java.util.List;
